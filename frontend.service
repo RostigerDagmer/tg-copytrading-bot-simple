@@ -1,0 +1,13 @@
+[Unit]
+Description=Telegram copytrading bot service (frontend)
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=monke
+ExecStart=python /path/to/tgb_main.py
+
+[Install]
+WantedBy=multi-user.target
